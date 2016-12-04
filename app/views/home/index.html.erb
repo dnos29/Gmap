@@ -48,7 +48,7 @@
       var flightPlanCoordinates = [
         <% @locations.each do |location| %>
             {lat: <%= location.latlon[0] %>,lng: <%= location.latlon[1] %>},
-        <% end %>
+          <% end %>
       ];
       var flightPath = new google.maps.Polyline({
         path: flightPlanCoordinates,
